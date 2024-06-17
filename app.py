@@ -16,6 +16,9 @@ import nltk
 import re
 from nltk.corpus import stopwords
 
+# Download NLTK stopwords
+nltk.download('stopwords')
+
 # Load dataset
 def load_data():
     return pd.read_csv('data_scrape.csv')
@@ -61,7 +64,7 @@ def display_sentiment_with_most_thumbsup_piechart(data):
     return fig_sentiment_thumbsup
 
 # Fungsi untuk prediksi sentimen
-def predict_sentiment(text, model):
+def predict_sentiment(text, model, vectorizer):
     vectorized_text = vectorizer.transform([text])
     prediction = model.predict(vectorized_text)[0]
     return prediction
