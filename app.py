@@ -16,9 +16,6 @@ import nltk
 import re
 from nltk.corpus import stopwords
 
-# Download NLTK stopwords
-nltk.download('stopwords')
-
 # Load dataset
 def load_data():
     return pd.read_csv('data_scrape.csv')
