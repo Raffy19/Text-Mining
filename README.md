@@ -39,6 +39,3 @@ The Streamlit app allows users to:
 - Applied end-to-end text preprocessing: case folding, stopword removal, tokenization, and stemming
 - Compared performance of different machine learning models on sentiment classification
 - Built and deployed a simple, interactive web application for text classification
-
-## Disclaimer
-This project was developed for learning purposes using **dummy data** sourced from publicly available Play Store reviews. It does not reflect actual product sentiment and is not intended for production use.
